@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
   float: right;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
   right: 10px;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -113,7 +113,7 @@ position: relative;
 }
 
 .typeHeading {
-  height: 50px;
+  height: 90px;
   display: inline-block;
   width: 100%;
   box-shadow: 0 1px 3px #efefef;
@@ -137,7 +137,7 @@ position: relative;
 
 .typeHeading > h2 {
   font-size: 1.7em !important;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 .angular-google-map-container {
 /*  height: 600px;
