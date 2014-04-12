@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ionic'])
+angular.module('starter.controllers', ['ionic', 'google-maps'])
 
 .controller('AppCtrl', function ($scope, Activity) {
 
@@ -53,41 +53,89 @@ angular.module('starter.controllers', ['ionic'])
   //$scope.activities = Activity.getData();
 })
 
-    .controller('MapCtrl', function($scope, $ionicLoading) {
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(43.07493,-89.381388),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+.controller('MapCtrl', function($scope, $ionicLoading) {
+  $scope.$on('viewState.viewEnter', function(e, d) {
+      console.log('View enter', e, d, $scope);
+      var mapEl = angular.element(document.querySelector('.angular-google-map'));
+      var iScope = mapEl.isolateScope();
+      var map = iScope.map;
+      google.maps.event.trigger(map, "resize");
+  });
+
+  $scope.map = {
+      center: {
+        latitude: 32.785438,
+        longitude: -79.935174
+        // latitude: $scope.myInfo.location.latitude,
+        // longitude: $scope.myInfo.location.longitude
+      },
+      bounds: {},
+      zoom: 8,
+      markers: [
+                //Wadmalaw Island, SC
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 32.681833,
+                    longitude: -80.176347,
+                    showWindow: true,
+                    title: 'Wadmalaw Island'
+                },
+                //Sullivan's Island, SC
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 32.763232,
+                    longitude: -79.836751,
+                    showWindow: false,
+                    title: 'Sullivan\'s Island'
+                },
+                //Four Hole Swamp, SC
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 33.535462,
+                    longitude: -80.697699,
+                    showWindow: false,
+                    title: 'Four Hole Swamp'
+                },
+                //Ashley River, SC
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 32.837829,
+                    longitude: -79.994796,
+                    showWindow: false,
+                    title: 'Ashley River'
+                },
+                //Ashem Farm, SC
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 33.836081,
+                    longitude: -81.163725,
+                    showWindow: false,
+                    title: 'Ashem Farm'
+                },
+                //Angel Oak Preserve
+                {
+                    icon: 'img/markerGreen.png',
+                    latitude: 32.716769,
+                    longitude: -80.080808,
+                    showWindow: false,
+                    title: 'Angel Oak Preserve'
+                }
+            ],
+  };
+
+  _.each($scope.map.markers, function (marker) {
+        marker.closeClick = function () {
+            marker.showWindow = false;
+            $scope.$apply();
         };
-        var map = new google.maps.Map(document.getElementById("map"),
-            mapOptions);
-
-        // Stop the side bar from dragging when mousedown/tapdown on the map
-        google.maps.event.addDomListener(document.getElementById('map'), 'mousedown', function(e) {
-          e.preventDefault();
-          return false;
-        });
-
-        $scope.map = map;
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-      $scope.centerOnMe = function() {
-        if(!$scope.map) {
-          return;
-        }
-
-        $scope.loading = $ionicLoading.show({
-          content: 'Getting current location...',
-          showBackdrop: false
-        });
-
-        navigator.geolocation.getCurrentPosition(function(pos) {
-          $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-          $scope.loading.hide();
-        }, function(error) {
-          alert('Unable to get location: ' + error.message);
-        });
-      };
+        marker.onClicked = function () {
+            onMarkerClicked(marker);
+        };
     });
+
+  var onMarkerClicked = function (marker) {
+        marker.showWindow = true;
+        $scope.$apply();
+        //window.alert("Marker: lat: " + marker.latitude + ", lon: " + marker.longitude + " clicked!!")
+    };
+});

@@ -1,12 +1,19 @@
-  <div ng-controller="MapCtrl">
-    <ion-header-bar class="bar-dark">
-      <h1 class="title">Map</h1>
-    </ion-header-bar>
-    <ion-content scroll="false">
-      <div id="map"></div>
-    </ion-content>
-    <ion-footer-bar class="bar-dark">
-      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
-    </ion-footer-bar>
-  </div>
+<view title="navTitle" hide-back-button="true" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
+    <content has-header="true" padding="true">
 
+    <google-map
+        center='map.center'
+        zoom='map.zoom'
+         dragging="map.dragging"
+         bounds="map.bounds"
+         events="map.events"
+         options="map.options"
+         pan="true"
+         control="map.control">
+        <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+    </google-map>
+    <pre>
+      {{ map | json }}
+    </pre>
+    </content>
+</view>
