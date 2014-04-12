@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .activityBlock {
-  height: 240px;
+  height: 250px;
   font-weight: 400;
   border: 1px solid #c4c4c4;
   border-radius: 6px;
@@ -88,14 +88,18 @@ position: relative;
   display: block;
   font-weight: 600;
   font-family: 'Futura';
-  margin-left: 3px;
+  margin-left: 5px;
+  font-size: 22px;
+  margin-top: 5px;
 }
 
 .act-quote {
   color: #666f73;
   display: block;
   white-space: nowrap;
-  margin-left: 3px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
   font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -105,7 +109,7 @@ position: relative;
   width: 20px;
   height: 40px;
   display: inline;
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .faded {
