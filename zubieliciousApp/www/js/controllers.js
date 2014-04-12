@@ -20,6 +20,10 @@ angular.module('starter.controllers', ['ionic'])
     {name: 'Walking Trails'}
   ];
 
+      $scope.range = function(n) {
+        return new Array(n);
+    };
+
   $scope.locations = [
     {name: 'Wadmalaw Island'},
     {name: 'Sullivan\'s Island'},

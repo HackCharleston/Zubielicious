@@ -8,10 +8,11 @@
   </ion-pane>
 
   <ion-side-menu side="left" width="350" is-enabled="true">
+    <img class="headerLogo" ng-src="/img/list_Header.png" />
     <header class="bar bar-header bar-stable">
-      <h1>Activities</h1>
+
     </header>
-    <ion-content class="has-header">
+    <ion-content class="has-header" ng-style="{'margin-top':'35px'}">
       <!-- Activities -->
       <ion-list>
 <!--         <ion-item nav-clear menu-close href="#/app/search">
@@ -23,14 +24,14 @@
         <ion-item nav-clear menu-close href="#/app/activities">
           All Activities
         </ion-item>
-        <ion-item class="typeWrapper" ng-repeat="type in types" ng-click="show = !show">
-          <div class="typeHeading" ><span class="typeIconBg"></span><h2>{{type.name | uppercase}}</h2></div>
-          <div class="activityBlock" ng-class="{'hide':!show}">
-            <div ng-repeat="item in activities | filter:{type: type.name}:true">
-              <span class="act-image"></span>
-              <span class="act-name">{{item.name}}</span>
+        <ion-item class="typeWrapper" ng-repeat="type in types" >
+          <div class="typeHeading" ng-click="show = !show"><span class="typeIconBg"></span><h2>{{type.name | uppercase}}</h2><span class="zArrow" ng-class="{'zArrowDown':show}"></span></div>
+          <div >
+            <div class="activityBlock" ng-class="{'activityBlockHide':!show}" ng-repeat="item in activities | filter:{type: type.name}:true" ng-click="selectActivity(item)">
+              <span class="act-image"><img ng-src="/img/huntImg1.png" /></span>
+              <span class="act-name">{{item.name | uppercase}}</span>
               <span class="act-quote">"{{item.quote}}"</span>
-              <span class="act-rating"></span>
+              <span class="act-rating"> <img ng-src="/img/ratingStar.png" ng-repeat="s in range(item.rating) track by $index" /></span>
             </div>
           </div>
         </ion-item>
