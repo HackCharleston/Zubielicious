@@ -1,7 +1,7 @@
 angular.module('resources.activities', []);
 angular.module('resources.activities')
   .factory('Activity', function ($http){
-    var activityData = $http.get('/data/activities.json').success(function (response) {
+    var activityData = $http.get('/lib/ionic/data/activities.json').success(function (response) {
       console.log('activities ' + JSON.stringify(response, undefined, 2));
       return response;
     });
