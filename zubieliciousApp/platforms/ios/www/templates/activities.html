@@ -1,11 +1,11 @@
-<ion-view title="Playlists">
+<ion-view title="Activities">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+      <ion-item ng-repeat="activity in activities" ng-click="selectActivity(activity)" href="#/app/activities/{{activity.name}}">
+        {{activity.name}}
       </ion-item>
     </ion-list>
   </ion-content>

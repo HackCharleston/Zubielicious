@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>27439D37-4D61-46E6-84A6-5C067C6E7910</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloCordova</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D82854C2-41E8-451D-ACAC-3B7BD6E2CBD3</key>
+		<string>https://github.com/HackCharleston/Zubielicious.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>zubieliciousApp/platforms/ios/HelloCordova.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D82854C2-41E8-451D-ACAC-3B7BD6E2CBD3</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HackCharleston/Zubielicious.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D82854C2-41E8-451D-ACAC-3B7BD6E2CBD3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D82854C2-41E8-451D-ACAC-3B7BD6E2CBD3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Zubielicious</string>
+		</dict>
+	</array>
+</dict>
+</plist>
