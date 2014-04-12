@@ -38,7 +38,7 @@ angular.module(
           templateUrl: "templates/search.html",
           controller: 'MapCtrl'
         }
-      },
+      }
     })
 
     .state('app.browse', {
@@ -69,6 +69,6 @@ angular.module(
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/activities');
+  $urlRouterProvider.otherwise('/app/search');
 });
 

@@ -121,7 +121,19 @@ position: relative;
   padding-top: 10px;
 }
 .angular-google-map-container {
-  height: 600px;
-  width: 960px;
+/*  height: 600px;
+  width: 960px;*/
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  height: 550px;
 }
 
+.locationHeader {
+  display: inline;
+  width: auto;
+  margin: 0 10px;
+  color: #8da6a1;
+  font-family: 'Futura';
+  font-weight: 600;
+  font-size: 2em;
+}
