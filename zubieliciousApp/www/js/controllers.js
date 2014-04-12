@@ -95,7 +95,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
         longitude: -80.075843
       },
       bounds: {},
-      zoom: 8,
+      zoom: 9,
       places: [
                 //Wadmalaw Island, SC
                 {
