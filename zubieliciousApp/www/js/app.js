@@ -33,6 +33,7 @@ angular.module(
 
     .state('app.search', {
       url: "/search",
+      controller: 'MapCtrl',
       views: {
         'menuContent' :{
           templateUrl: "templates/search.html"
