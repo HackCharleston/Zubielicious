@@ -23,11 +23,14 @@
         <ion-item nav-clear menu-close href="#/app/activities">
           All Activities
         </ion-item>
-        <ion-item class="typeWrapper" ng-repeat="type in types">
-          <div class="typeHeading"><h2>{{type.name}}</h2></div>
-          <div class="activityBlock">
+        <ion-item class="typeWrapper" ng-repeat="type in types" ng-click="show = !show">
+          <div class="typeHeading" ><span class="typeIconBg"></span><h2>{{type.name | uppercase}}</h2></div>
+          <div class="activityBlock" ng-class="{'hide':!show}">
             <div ng-repeat="item in activities | filter:{type: type.name}:true">
-              {{item.name}}
+              <span class="act-image"></span>
+              <span class="act-name">{{item.name}}</span>
+              <span class="act-quote">"{{item.quote}}"</span>
+              <span class="act-rating"></span>
             </div>
           </div>
         </ion-item>
