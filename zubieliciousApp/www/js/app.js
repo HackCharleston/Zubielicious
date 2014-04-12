@@ -31,6 +31,15 @@ angular.module(
       controller: 'AppCtrl'
     })
 
+    .state('app.intro', {
+      url: "/intro",
+      views: {
+        'menuContent' :{
+          templateUrl: "Intro.html"
+        }
+      }
+    })
+
     .state('app.search', {
       url: "/search",
       views: {
@@ -39,8 +48,8 @@ angular.module(
           controller: 'MapCtrl'
         }
       }
-    })
-;
+    });
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/search');
 });
