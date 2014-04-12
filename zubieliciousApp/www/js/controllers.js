@@ -39,6 +39,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
 
   $scope.selectActivity = function (act) {
     $scope.theActivity = act;
+    console.log('activity selected' + act.name);
   };
 
 })
@@ -62,6 +63,17 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
       google.maps.event.trigger(map, "resize");
   });
 
+  $scope.selectLocation = function (loc) {
+    $scope.selectedLocation = loc;
+    console.log('selected location ' + loc.title);
+    $scope.map.center = {
+      latitude : loc.latitude,
+      longitude: loc.longitude
+    };
+    $scope.map.zoom = 14;
+  };
+
+
   $scope.map = {
       center: {
         latitude: 33.331674,
@@ -69,7 +81,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
       },
       bounds: {},
       zoom: 8,
-      markers: [
+      places: [
                 //Wadmalaw Island, SC
                 {
                     icon: 'img/markerGreen.png',
@@ -117,6 +129,32 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                     longitude: -80.080808,
                     showWindow: false,
                     title: 'Angel Oak Preserve'
+                }
+            ],
+            activities: [
+                //Kayaking
+                {
+                    icon: 'img/markerBlue.png',
+                    latitude: 32.706488,
+                    longitude: -80.177695,
+                    showWindow: false,
+                    title: 'Kayaking'
+                },
+                //Walking Trails
+                {
+                    icon: 'img/markerBrown.png',
+                    latitude: 32.663145,
+                    longitude: -80.184733,
+                    showWindow: false,
+                    title: 'Walking Trails'
+                },
+                //Fishing
+                {
+                    icon: 'img/markerMustard.png',
+                    latitude: 32.660182,
+                    longitude: -80.145594,
+                    showWindow: false,
+                    title: 'Fishing'
                 }
             ]
   };

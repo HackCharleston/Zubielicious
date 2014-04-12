@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .activityBlock {
-  height: 175px;
+  height: 215px;
   font-weight: 400;
   border: 1px solid #c4c4c4;
   border-radius: 6px;
@@ -125,7 +125,7 @@ position: relative;
   width: 960px;*/
   width: calc(100% - 10px);
   margin: 0 auto;
-  height: 550px;
+  height: 800px;
 }
 
 .locationHeader {
@@ -135,5 +135,25 @@ position: relative;
   color: #8da6a1;
   font-family: 'Futura';
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1em;
+  line-height: 2.5em;
+}
+
+.locationHeaderWrapper {
+  display: inline-block;
+  background: url(/img/TopNav.png) no-repeat;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 3px 4px #595959;
+}
+
+.active-loc {
+  color: #f5f5ec;
+  border-bottom: 4px solid #f5f5ec;
+}
+
+.detail-box {
+  background-color: #ededed;
+  height: 200px;
+  width: 100%;
 }
