@@ -155,14 +155,14 @@ position: relative;
   color: #8da6a1;
   font-family: 'Futura';
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 2.5em;
 }
 
 .locationHeaderWrapper {
   display: inline-block;
   background: url(/img/TopNav.png) no-repeat;
-  height: 40px;
+  height: 60px;
   width: 100%;
   box-shadow: 0 3px 4px #595959;
 }
