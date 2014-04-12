@@ -59,10 +59,10 @@ angular.module(
     })
 
     .state('app.single', {
-      url: "/playlists/:playlistId",
+      url: "/activities/:activityName",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
+          templateUrl: "templates/activity.html",
           controller: 'PlaylistCtrl'
         }
       }

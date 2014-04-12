@@ -1,9 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function ($scope) {
-
-  $scope.locationsActive = true;
-  $scope.typesActive = false;
+.controller('AppCtrl', function ($scope, Activity) {
 
   $scope.types = [
     {name: 'Canoeing'},
@@ -22,6 +19,7 @@ angular.module('starter.controllers', [])
     {name: 'Biking'},
     {name: 'Walking Trails'}
   ];
+
   $scope.locations = [
     {name: 'Wadmalaw Island'},
     {name: 'Sullivan\'s Island'},
@@ -31,26 +29,22 @@ angular.module('starter.controllers', [])
     {name: 'Angel Oak Preserve'},
   ];
 
-  $scope.showLocations = function () {
-    $scope.locationsActive = true;
-    $scope.typesActive = false;
-  };
+  Activity.getData().success(function (data) {
+    $scope.activities = data;
+  });
 
-  $scope.showTypes = function () {
-    $scope.locationsActive = false;
-    $scope.typesActive = true;
-  };
+  $scope.selectActivity = function (act) {
+    $scope.theActivity = act;
+  }
 
 })
 
 .controller('PlaylistsCtrl', function ($scope, Activity) {
-  Activity.getData().success(function (data) {
-    $scope.activities = data;
-  });
+
   //console.log($scope.activities);
 
 })
 
 .controller('PlaylistCtrl', function ($scope, $stateParams, Activity) {
-  $scope.activities = Activity.getData();
+  //$scope.activities = Activity.getData();
 });

@@ -9,20 +9,29 @@
 
   <ion-side-menu side="left">
     <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
+      <h1>Activities</h1>
     </header>
     <ion-content class="has-header">
+      <!-- Activities -->
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
+<!--         <ion-item nav-clear menu-close href="#/app/search">
           Search
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/browse">
           Browse
+        </ion-item> -->
+        <ion-item nav-clear menu-close href="#/app/activities">
+          All Activities
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+        <ion-item ng-repeat="type in types">
+          {{type.name}}
         </ion-item>
       </ion-list>
+
+      <!-- Locations -->
+<!--       <ion-list>
+
+      </ion-list> -->
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

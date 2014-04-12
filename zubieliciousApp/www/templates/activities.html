@@ -4,7 +4,7 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="activity in activities" href="#/app/activities/{{activity.name}}">
+      <ion-item ng-repeat="activity in activities" ng-click="selectActivity(activity)" href="#/app/activities/{{activity.name}}">
         {{activity.name}}
       </ion-item>
     </ion-list>
