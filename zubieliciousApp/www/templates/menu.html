@@ -7,7 +7,7 @@
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
-  <ion-side-menu side="left">
+  <ion-side-menu side="left" width="350" is-enabled="true">
     <header class="bar bar-header bar-stable">
       <h1>Activities</h1>
     </header>
@@ -23,15 +23,15 @@
         <ion-item nav-clear menu-close href="#/app/activities">
           All Activities
         </ion-item>
-        <ion-item ng-repeat="type in types">
-          {{type.name}}
+        <ion-item class="typeWrapper" ng-repeat="type in types">
+          <div class="typeHeading"><h2>{{type.name}}</h2></div>
+          <div class="activityBlock">
+            <div ng-repeat="item in activities | filter:{type: type.name}:true">
+              {{item.name}}
+            </div>
+          </div>
         </ion-item>
       </ion-list>
-
-      <!-- Locations -->
-<!--       <ion-list>
-
-      </ion-list> -->
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

@@ -1,1 +1,24 @@
 /* Empty. Add your own CSS if you like */
+.activityBlock {
+  height: 200px;
+  padding: 10px;
+  font-weight: 400;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  margin: 5px auto;
+  box-shadow: 1px 1px 10px #efefef;
+}
+
+.typeHeading {
+  height: 50px;
+  display: inline-block;
+  background-color: rgba(129,255,129, 0.8);
+}
+
+.typeWrapper {
+  padding: 0;
+}
+
+.typeHeading h2 {
+  font-size: 2em;
+}

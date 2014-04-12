@@ -1,7 +1,7 @@
 [
   {
     "name": "Wadmalaw Kayaking",
-    "type": "watersport",
+    "type": "Kayaking",
     "description": "Kayaking in the beautiful wetlands",
     "rating": 4,
     "quote": "Water is smooth as glass!!",
@@ -9,7 +9,7 @@
   },
     {
     "name": "Picnic under the Angel Oak",
-    "type": "leisure",
+    "type": "Walking Trails",
     "description": "Enjoy a picnic under the beautiful Angel Oak tree",
     "rating": 5,
     "quote": "I brought a sandwhich and it changed my life!",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Coosawhatchie Fishing",
-    "type": "fishing",
+    "type": "Fishing",
     "description": "Cast a reel and bring home dinner",
     "rating": 2,
     "quote": "The fish are huge!.. or maybe it was the beer",

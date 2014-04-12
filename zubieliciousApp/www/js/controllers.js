@@ -3,20 +3,20 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function ($scope, Activity) {
 
   $scope.types = [
-    {name: 'Canoeing'},
+    //{name: 'Canoeing'},
     {name: 'Fishing'},
-    {name: 'Hunting'},
-    {name: 'Animal Watching'},
-    {name: 'Birding'},
-    {name: 'Swimming'},
+    // {name: 'Hunting'},
+    // {name: 'Animal Watching'},
+    // {name: 'Birding'},
+    // {name: 'Swimming'},
     {name: 'Kayaking'},
-    {name: 'Paddle Boarding'},
-    {name: 'Historical POI'},
-    {name: 'You Pick Agriculture'},
-    {name: 'Swimming'},
-    {name: 'Surfing'},
-    {name: 'Hiking'},
-    {name: 'Biking'},
+    // {name: 'Paddle Boarding'},
+    // {name: 'Historical POI'},
+    // {name: 'You Pick Agriculture'},
+    // {name: 'Swimming'},
+    // {name: 'Surfing'},
+    // {name: 'Hiking'},
+    // {name: 'Biking'},
     {name: 'Walking Trails'}
   ];
 
