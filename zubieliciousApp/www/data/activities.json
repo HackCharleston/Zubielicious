@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Wadmalaw Kayaking",
+    "type": "watersport",
+    "description": "Kayaking in the beautiful wetlands",
+    "img": ""
+  },
+    {
+    "name": "Picnic under the Angel Oak",
+    "type": "leisure",
+    "description": "Enjoy a picnic under the beautiful Angel Oak tree",
+    "img": ""
+  },
+  {
+    "name": "Coosawhatchie Fishing",
+    "type": "fishing",
+    "description": "Cast a reel and bring home dinner",
+    "img": ""
+  }
+]
