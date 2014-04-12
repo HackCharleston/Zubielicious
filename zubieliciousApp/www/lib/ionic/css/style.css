@@ -123,9 +123,10 @@ position: relative;
 .angular-google-map-container {
 /*  height: 600px;
   width: 960px;*/
-  width: calc(100% - 10px);
-  margin: 0 auto;
-  height: 800px;
+  /*width: calc(100% - 10px);*/
+  width: 1900px;
+  /*margin: 0 auto;*/
+  height: 1100px;
 }
 
 .locationHeader {
