@@ -48,11 +48,11 @@ angular.module(
         }
       }
     })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.activities', {
+      url: "/activities",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
+          templateUrl: "templates/activities.html",
           controller: 'PlaylistsCtrl'
         }
       }
@@ -68,6 +68,6 @@ angular.module(
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/activities');
 });
 
