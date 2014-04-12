@@ -92,11 +92,11 @@ position: relative;
 }
 
 .act-quote {
-  color: #c9c9c9;
+  color: #666f73;
   display: block;
   white-space: nowrap;
   margin-left: 3px;
-  font-size: 14px;
+  font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
