@@ -1,4 +1,3 @@
-
 <ion-view title="Map" hide-back-button="false" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="false">
 
     <ion-content has-header="false" padding="true">
@@ -14,12 +13,15 @@
          pan="true"
          control="map.control">
             <markers models="map.places" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+                        <markers models="map.activities" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
     </div>
-    <pre>
-     <!--  {{ map }} -->
-    </pre>
-    <div class="detail-box">
-      {{selectedLocation.title}}
+    <div class="detail-box" ng-show="selectedLocation">
+      <h2>{{selectedLocation.title}}</h2>
     </div>
+        <div class="detail-box" ng-show="theActivity">
+      <h2>{{theActivity.name}}</h2>
+    </div>
+
+
     </ion-content>
-<!-- </ion-view> -->
+</ion-view>

@@ -55,6 +55,8 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
 })
 
 .controller('MapCtrl', function($scope, $ionicLoading) {
+  google.maps.visualRefresh = true;
+
   $scope.$on('viewState.viewEnter', function(e, d) {
       console.log('View enter', e, d, $scope);
       var mapEl = angular.element(document.querySelector('.angular-google-map'));
@@ -87,7 +89,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                     icon: 'img/markerGreen.png',
                     latitude: 32.681833,
                     longitude: -80.176347,
-                    showWindow: true,
+                    showWindow: false,
                     title: 'Wadmalaw Island'
                 },
                 //Sullivan's Island, SC
@@ -165,13 +167,8 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
             $scope.$apply();
         };
         marker.onClicked = function () {
-            onMarkerClicked(marker);
+            marker.showWindow = true;
+            $scope.$apply();
         };
     });
-
-  var onMarkerClicked = function (marker) {
-        marker.showWindow = true;
-        $scope.$apply();
-        //window.alert("Marker: lat: " + marker.latitude + ", lon: " + marker.longitude + " clicked!!")
-    };
 });
