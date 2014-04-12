@@ -65,6 +65,19 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
       google.maps.event.trigger(map, "resize");
   });
 
+  $scope.$watch('theActivity', function (newVal, oldVal) {
+    if (newVal != oldVal) {
+      //var result
+      $scope.map.center = {
+        latitude : newVal.latitude,
+        longitude: newVal.longitude
+      };
+
+      $scope.map.zoom = 18;
+    }
+
+  });
+
   $scope.selectLocation = function (loc) {
     $scope.selectedLocation = loc;
     console.log('selected location ' + loc.title);

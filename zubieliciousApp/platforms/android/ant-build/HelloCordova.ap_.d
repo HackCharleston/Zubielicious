@@ -38,7 +38,12 @@
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/huntImg1.png \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/ionic.png \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/list_Header.png \
+/Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/markerBlue.png \
+/Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/markerBrown.png \
+/Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/markerGreen.png \
+/Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/markerMustard.png \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/ratingStar.png \
+/Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/img/TopNav.png \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/js/activities.js \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/js/app.js \
 /Users/loganedwards/Projects/hackcharleston_2014/zubielicious/Zubielicious/zubieliciousApp/platforms/android/assets/www/js/controllers.js \

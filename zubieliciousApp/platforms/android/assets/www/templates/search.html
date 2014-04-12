@@ -1,12 +1,27 @@
-  <div ng-controller="MapCtrl">
-    <ion-header-bar class="bar-dark">
-      <h1 class="title">Map</h1>
-    </ion-header-bar>
-    <ion-content scroll="false">
-      <div id="map"></div>
-    </ion-content>
-    <ion-footer-bar class="bar-dark">
-      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
-    </ion-footer-bar>
-  </div>
+<ion-view title="Map" hide-back-button="false" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="false">
 
+    <ion-content has-header="false" padding="true">
+      <div class="locationHeaderWrapper"><span class="locationHeader" ng-repeat="place in map.places" ng-class="{'active-loc': selectedLocation === place}" ng-click="selectLocation(place)">{{place.title | uppercase}}</span></div>
+    <div class="google-map span7"
+         center="map.center"
+         zoom="map.zoom"
+         draggable="true"
+         dragging="map.dragging"
+         bounds="map.bounds"
+         events="map.events"
+         options="map.options"
+         pan="true"
+         control="map.control">
+            <markers models="map.places" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+                        <markers models="map.activities" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+    </div>
+    <div class="detail-box" ng-show="selectedLocation">
+      <h2>{{selectedLocation.title}}</h2>
+    </div>
+        <div class="detail-box" ng-show="theActivity">
+      <h2>{{theActivity.name}}</h2>
+    </div>
+
+
+    </ion-content>
+</ion-view>

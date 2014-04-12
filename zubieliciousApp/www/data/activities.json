@@ -4,6 +4,8 @@
     "type": "Kayaking",
     "description": "Kayaking in the beautiful wetlands",
     "rating": 4,
+    "latitude": 32.706488,
+                    "longitude": -80.177695,
     "quote": "Water is smooth as glass!!",
     "img": ""
   },
@@ -12,6 +14,8 @@
     "type": "Walking Trails",
     "description": "Enjoy a picnic under the beautiful Angel Oak tree",
     "rating": 5,
+                        "latitude": 32.663145,
+                    "longitude": -80.184733,
     "quote": "I brought a sandwhich and it changed my life!",
     "img": ""
   },
@@ -20,6 +24,8 @@
     "type": "Fishing",
     "description": "Cast a reel and bring home dinner",
     "rating": 2,
+    "latitude": 32.660182,
+    "longitude": -80.145594,
     "quote": "The fish are huge!.. or maybe it was the beer",
     "img": ""
   }

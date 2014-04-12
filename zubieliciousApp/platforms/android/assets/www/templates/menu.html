@@ -7,12 +7,12 @@
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
-  <ion-side-menu side="left" width="350" is-enabled="true">
+  <ion-side-menu side="left" width="484" is-enabled="true">
     <img class="headerLogo" ng-src="/img/list_Header.png" />
     <header class="bar bar-header bar-stable">
 
     </header>
-    <ion-content class="has-header" ng-style="{'margin-top':'35px'}">
+    <ion-content class="has-header" ng-style="{'margin-top':'75px'}">
       <!-- Activities -->
       <ion-list>
 <!--         <ion-item nav-clear menu-close href="#/app/search">
@@ -21,9 +21,9 @@
         <ion-item nav-clear menu-close href="#/app/browse">
           Browse
         </ion-item> -->
-        <ion-item nav-clear menu-close href="#/app/activities">
+<!--         <ion-item nav-clear menu-close href="#/app/activities">
           All Activities
-        </ion-item>
+        </ion-item> -->
         <ion-item class="typeWrapper" ng-repeat="type in types" >
           <div class="typeHeading" ng-click="show = !show"><span class="typeIconBg"></span><h2>{{type.name | uppercase}}</h2><span class="zArrow" ng-class="{'zArrowDown':show}"></span></div>
           <div >

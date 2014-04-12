@@ -33,42 +33,15 @@ angular.module(
 
     .state('app.search', {
       url: "/search",
-      controller: 'MapCtrl',
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/search.html",
+          controller: 'MapCtrl'
         }
       }
     })
-
-    .state('app.browse', {
-      url: "/browse",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
-    })
-    .state('app.activities', {
-      url: "/activities",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/activities.html",
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
-    .state('app.single', {
-      url: "/activities/:activityName",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/activity.html",
-          controller: 'PlaylistCtrl'
-        }
-      }
-    });
+;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/activities');
+  $urlRouterProvider.otherwise('/app/search');
 });
 
