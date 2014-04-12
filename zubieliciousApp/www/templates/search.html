@@ -1,6 +1,8 @@
 <view title="navTitle" hide-back-button="true" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
     <content has-header="true" padding="true">
 
+
+
     <div class="google-map span7"
          center="map.center"
          zoom="map.zoom"
@@ -11,10 +13,8 @@
          options="map.options"
          pan="true"
          control="map.control">
-            <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+            <markers models="map.places" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+            <markers models="map.activities" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
     </div>
-    <pre>
-      {{ map }}
-    </pre>
     </content>
 </view>

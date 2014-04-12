@@ -54,6 +54,8 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
 })
 
 .controller('MapCtrl', function($scope, $ionicLoading) {
+  google.maps.visualRefresh = true;
+
   $scope.$on('viewState.viewEnter', function(e, d) {
       console.log('View enter', e, d, $scope);
       var mapEl = angular.element(document.querySelector('.angular-google-map'));
@@ -69,13 +71,13 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
       },
       bounds: {},
       zoom: 8,
-      markers: [
+      places: [
                 //Wadmalaw Island, SC
                 {
                     icon: 'img/markerGreen.png',
                     latitude: 32.681833,
                     longitude: -80.176347,
-                    showWindow: true,
+                    showWindow: false,
                     title: 'Wadmalaw Island'
                 },
                 //Sullivan's Island, SC
@@ -118,6 +120,32 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                     showWindow: false,
                     title: 'Angel Oak Preserve'
                 }
+            ],
+            activities: [
+                //Kayaking
+                {
+                    icon: 'img/markerBlue.png',
+                    latitude: 32.706488,
+                    longitude: -80.177695,
+                    showWindow: false,
+                    title: 'Kayaking'
+                },
+                //Walking Trails
+                {
+                    icon: 'img/markerBrown.png',
+                    latitude: 32.663145,
+                    longitude: -80.184733,
+                    showWindow: false,
+                    title: 'Walking Trails'
+                },
+                //Fishing
+                {
+                    icon: 'img/markerMustard.png',
+                    latitude: 32.660182,
+                    longitude: -80.145594,
+                    showWindow: false,
+                    title: 'Fishing'
+                }
             ]
   };
 
@@ -127,13 +155,8 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
             $scope.$apply();
         };
         marker.onClicked = function () {
-            onMarkerClicked(marker);
+            marker.showWindow = true;
+            $scope.$apply();
         };
     });
-
-  var onMarkerClicked = function (marker) {
-        marker.showWindow = true;
-        $scope.$apply();
-        //window.alert("Marker: lat: " + marker.latitude + ", lon: " + marker.longitude + " clicked!!")
-    };
 });
