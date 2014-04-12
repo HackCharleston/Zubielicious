@@ -10,7 +10,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'GearedSlab' !important;
+  font-family: 'Futura' !important;
 }
 
 .activityBlock {
@@ -92,7 +92,7 @@ position: relative;
 }
 
 .act-quote {
-  color: #ddd;
+  color: #c9c9c9;
   display: block;
   white-space: nowrap;
   margin-left: 3px;
@@ -136,7 +136,7 @@ position: relative;
 }
 
 .typeHeading > h2 {
-  font-size: 2em !important;
+  font-size: 1.7em !important;
   padding-top: 10px;
 }
 .angular-google-map-container {
