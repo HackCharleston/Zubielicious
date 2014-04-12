@@ -179,3 +179,7 @@ position: relative;
 }
 
 .edgeLoad-EDGE-28597010 { visibility:hidden; }
+
+.view > ion-nav-bar {
+  display: none;
+}

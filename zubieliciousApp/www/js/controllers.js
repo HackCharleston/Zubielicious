@@ -99,7 +99,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
       places: [
                 //Wadmalaw Island, SC
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 32.681833,
                     longitude: -80.176347,
                     showWindow: false,
@@ -107,7 +107,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                 },
                 //Sullivan's Island, SC
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 32.763232,
                     longitude: -79.836751,
                     showWindow: false,
@@ -115,7 +115,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                 },
                 //Four Hole Swamp, SC
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 33.535462,
                     longitude: -80.697699,
                     showWindow: false,
@@ -123,7 +123,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                 },
                 //Ashley River, SC
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 32.837829,
                     longitude: -79.994796,
                     showWindow: false,
@@ -131,7 +131,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                 },
                 //Ashem Farm, SC
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 33.836081,
                     longitude: -81.163725,
                     showWindow: false,
@@ -139,7 +139,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                 },
                 //Angel Oak Preserve
                 {
-                    icon: 'img/markerGreen.png',
+                    icon: 'img/smallLogo.png',
                     latitude: 32.716769,
                     longitude: -80.080808,
                     showWindow: false,
