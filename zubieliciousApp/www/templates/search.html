@@ -1,19 +1,20 @@
 <view title="navTitle" hide-back-button="true" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true">
     <content has-header="true" padding="true">
 
-    <google-map
-        center='map.center'
-        zoom='map.zoom'
+    <div class="google-map span7"
+         center="map.center"
+         zoom="map.zoom"
+         draggable="true"
          dragging="map.dragging"
          bounds="map.bounds"
          events="map.events"
          options="map.options"
          pan="true"
          control="map.control">
-        <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
-    </google-map>
+            <markers models="map.markers" coords="'self'" icon="'icon'" click="'onClicked'"></markers>
+    </div>
     <pre>
-      {{ map | json }}
+      {{ map }}
     </pre>
     </content>
 </view>

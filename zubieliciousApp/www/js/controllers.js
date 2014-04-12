@@ -64,10 +64,8 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
 
   $scope.map = {
       center: {
-        latitude: 32.785438,
-        longitude: -79.935174
-        // latitude: $scope.myInfo.location.latitude,
-        // longitude: $scope.myInfo.location.longitude
+        latitude: 33.331674,
+        longitude: -80.075843
       },
       bounds: {},
       zoom: 8,
@@ -120,7 +118,7 @@ angular.module('starter.controllers', ['ionic', 'google-maps'])
                     showWindow: false,
                     title: 'Angel Oak Preserve'
                 }
-            ],
+            ]
   };
 
   _.each($scope.map.markers, function (marker) {
