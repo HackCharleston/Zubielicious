@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .activityBlock {
-  height: 215px;
+  height: 240px;
   font-weight: 400;
   border: 1px solid #c4c4c4;
   border-radius: 6px;
@@ -44,6 +44,24 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(0deg);
     -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
+}
+.fish {
+  display: inline-block;
+  background: url(/img/banner_Fishing.png);
+  width: 75px;
+  height: 85px;
+}
+.kayak {
+  display: inline-block;
+  background: url(/img/banner_Surfing.png);
+  width: 75px;
+  height: 85px;
+}
+.walk {
+  display: inline-block;
+  background: url(/img/banner_Sightseeing.png);
+  width: 75px;
+  height: 85px;
 }
 
 .zArrowDown {
@@ -103,9 +121,10 @@ position: relative;
 
 .typeIconBg {
   float: left;
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
+margin: 0 10px 0 2px;
+width: 75px;
+height: 85px;
+position: relative;
 }
 
 .typeWrapper {

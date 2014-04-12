@@ -25,7 +25,7 @@
           All Activities
         </ion-item> -->
         <ion-item class="typeWrapper" ng-repeat="type in types" >
-          <div class="typeHeading" ng-click="show = !show"><span class="typeIconBg"></span><h2>{{type.name | uppercase}}</h2><span class="zArrow" ng-class="{'zArrowDown':show}"></span></div>
+          <div class="typeHeading" ng-click="show = !show"><span class="typeIconBg" ng-class="{'fish': type.name == 'Fishing', 'walk':type.name == 'Walking Trails', 'kayak': type.name == 'Kayaking'}"></span><h2>{{type.name | uppercase}}</h2><span class="zArrow" ng-class="{'zArrowDown':!show}"></span></div>
           <div >
             <div class="activityBlock" ng-class="{'activityBlockHide':show}" ng-repeat="item in activities | filter:{type: type.name}:true" ng-click="selectActivity(item)">
               <span class="act-image"><img ng-src="{{item.img}}" /></span>
