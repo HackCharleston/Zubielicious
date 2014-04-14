@@ -7,17 +7,17 @@
     "latitude": 32.706488,
                     "longitude": -80.177695,
     "quote": "Water is smooth as glass!!",
-    "img": ""
+    "img": "/img/placeIMG_Surfing0.png"
   },
     {
     "name": "Picnic under the Angel Oak",
     "type": "Walking Trails",
     "description": "Enjoy a picnic under the beautiful Angel Oak tree",
     "rating": 5,
-                        "latitude": 32.663145,
-                    "longitude": -80.184733,
+                        "latitude": 32.716769,
+                    "longitude": -80.080808,
     "quote": "I brought a sandwhich and it changed my life!",
-    "img": ""
+    "img": "/img/placeIMG_Sightseeing1.png"
   },
   {
     "name": "Coosawhatchie Fishing",
@@ -27,6 +27,6 @@
     "latitude": 32.660182,
     "longitude": -80.145594,
     "quote": "The fish are huge!.. or maybe it was the beer",
-    "img": ""
+    "img": "/img/placeIMG_Fishing0.png"
   }
 ]
